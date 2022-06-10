@@ -1,0 +1,66 @@
+// check whether the given number is odd or even.
+#include <stdio.h>
+ 
+int main ()  
+{  
+    int num;  
+    printf (" Enter the value of num: ");  
+    scanf (" %d", &num);  
+      
+      
+      if(num % 2 == 0)
+        printf("%d is even.", num);
+    else
+        printf("%d is odd.", num);
+    
+    return 0; 
+}  
+
+
+4.// grade system
+
+#include<stdio.h>
+int main()
+{
+   int marks;
+  
+   printf("\nEnter the Marks Between 0 To 100:");
+   scanf("%d", &marks);
+   
+   if(marks>100)
+   {
+    
+    printf("\nPlease Enter marks between 0 to 100\n");
+   }
+   else
+   {
+   switch(marks/20)
+   {
+       
+       case 1 :
+      
+           printf("\n Your Grade is: E");
+           break;
+       case 2 :
+            
+           printf("\n Your Grade is: D" );
+           break;
+       case 3 :
+           
+           printf("\n Your Grade is: C" );
+          break;
+       case 4 :
+         
+           printf("\n Your Grade is: B" );
+           break;
+       case 5 :
+           
+           printf("\n Your Grade is: A" );
+           break;
+       default :
+          
+           printf("\n You Grade is: F & you're Failed\n");
+   }
+ }
+   return 0;
+}
